@@ -3,8 +3,8 @@ layout: ontology_detail
 id: ro
 title: Relations Ontology
 build:
-  checkout: svn co http://obo-relations.googlecode.com/svn/trunk/src/ontology
-  system: svn
+  checkout:  git clone https://github.com/oborel/obo-relations.git
+  system: git
   method: vcs
   infallible: 1
 canonical: ro.owl
@@ -19,6 +19,8 @@ contact:
 jobs:
   - id: http://build.berkeleybop.org/job/build-ro
     type: DryRunBuild
+  - id: https://travis-ci.org/oborel/obo-relations
+    type: travis-ci
 products:
  - id: ro.owl
    title: Relation Ontology

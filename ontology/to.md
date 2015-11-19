@@ -10,6 +10,7 @@ homepage: http://planteome.org
 page: http://planteome.org/amigo/cgi-bin/crop_amigo/term_details?term=TO:0000387&session_id=815amigo1442021959
 products:
   - id: to.owl
+  - id: to.obo
 license:
   url: https://creativecommons.org/licenses/by/3.0/
   label: CC-BY
@@ -17,9 +18,15 @@ taxon:
   id: NCBITaxon:33090
   label: Viridiplantae
 title: Plant Trait Ontology
+browsers:
+ - label: Planteome
+   title: Planteome browser
+   url: http://dev.planteome.org/amigo/term/TO:0000387
 build:
-  source_url: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to-release-files/plant-trait-ontology.obo
-  method: obo2owl
+  checkout: git clone https://github.com/Planteome/plant-trait-ontology.git
+  system: git
+  path: "."
+  method: vcs
   infallible: 1
 tracker: https://github.com/Planteome/plant-trait-ontology/issues
 publications:
