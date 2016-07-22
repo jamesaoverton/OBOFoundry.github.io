@@ -8,7 +8,7 @@ title: Add a browser
 Every ontology in the registry is automatically in [OntoBee](http://ontobee.org), so we
 automatically provide a link to OntoBee.
 
-You can add links to other browsers by adding entires in the
+You can add links to other browsers by adding entries in the
 `browsers` section of your metadata file. Please see the
 [how-do-i-edit-metadata entry in the FAQ](how-do-i-edit-metadata.html)
 for details of editing your metadata.
