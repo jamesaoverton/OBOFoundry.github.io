@@ -18,7 +18,7 @@ forks and pull requests, here is how the OBO site works.
 Each ontology has its own file in github called `ONT.md`, where ONT is
 the idspace for your ontology.
 
-The markdown (`.md`) page for your ontology is in two sections:
+The markdown (`.md`) page for your ontology has two sections:
 
  1. The section between the `---` markers is in a format called *yaml*, and is structured metadata
  2. The section after the markers is markdown text that can be used to customize your page
@@ -128,7 +128,7 @@ or on the "Edit" button on the OBO page. This will take them to a
 web-based editor for their metadata.
 
 As a first step, the user will be asked to "Fork this
-repository". This is to prevent any random github user for making
+repository". This is to prevent any random github user from making
 unwanted changes. The changes will exist only on the user's fork until
 approved by OBO admins:
 
@@ -141,7 +141,7 @@ You will only ever need to do this step once.
 ### Editing metadata: web based editing
 
 You will now be placed into a web-based editor. Your metadata is in
-two sections: YAML formatted structured data, and freeform
+two sections: YAML-formatted structured data, and freeform
 descriptions in markdown format.
 
 <img style="border: 2px solid black" alt="s" width="50%" height="50%" src="/images/eo-example-s4.png"/>
@@ -215,7 +215,7 @@ The change is reflected within seconds on the main site:
 <img style="border: 2px solid black" alt="s" width="50%" height="50%" src="/images/eo-example-s13.png"/>
 
 (note that changes will not be immediately visible in the front
-table. The OBO admin will need to regenrate metadata for this)
+table. The OBO admin will need to regenerate metadata for this)
 
 ## What happens with mistakes?
 
