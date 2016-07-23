@@ -18,7 +18,7 @@ build:
 ...
 ```
 
-This is instructions for the central OBO library build pipeline which
+These are instructions for the central OBO library build pipeline which
 runs nightly. This ensures creation of correct obo and owl files for
 each ontology.
 
