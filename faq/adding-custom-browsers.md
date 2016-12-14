@@ -19,13 +19,14 @@ browsers:
     url: http://monarchinitiative.org/phenotype/HP:0000118
 ```
 
-`browsers` is a multifield key. In YAML, each element in an array is
+`browsers` is a multifield key. In the YAML format, each element in an array is
 indicated by the `-`s. Each such element must have `label` (this is
-used to render the button), `title` and `url` (the actual link).
+used to render the button), `title` and `url` (the actual link). You may add 
+your own custom link(s) using the same format. 
 
 ### Future expansions
 
-In future we hope to enhance this:
+We hope to enhance this feature set in the future, including:
 
  * embeddable browsers
  * embeddable search
