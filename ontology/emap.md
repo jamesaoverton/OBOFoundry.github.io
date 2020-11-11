@@ -4,10 +4,11 @@ id: emap
 contact:
   email: Terry.Hayamizu@jax.org
   label: Terry Hayamizu
+  github: tfhayamizu
 description: A structured controlled vocabulary of stage-specific anatomical structures of the mouse (Mus).
 domain: anatomy
 homepage: http://emouseatlas.org
-page: http://www.obofoundry.org/wiki/index.php/EMAPA:Main_Page
+page: https://www.emouseatlas.org/emap/about/what_is_emap.html
 products:
   - id: emap.owl
 taxon:
@@ -17,10 +18,14 @@ title: Mouse gross anatomy and development, timed
 build:
   notes: new url soon
   source_url: ftp://ftp.hgu.mrc.ac.uk/pub/MouseAtlas/Anatomy/EMAP_combined.obo
+  insert_ontology_id: true
   method: obo2owl
 used_by:
  - url: https://www.biosharing.org/biodbcore-000659
    label: GXD
+is_obsolete: true
+replaced_by: emapa
+activity_status: inactive
 ---
 
 

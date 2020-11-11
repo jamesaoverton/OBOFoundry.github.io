@@ -4,6 +4,9 @@ id: spd
 contact:
   email: ramirez@macn.gov.ar
   label: Martin Ramirez
+license:
+  url: https://creativecommons.org/licenses/by/3.0/
+  label: CC-BY 3.0
 description: An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).
 domain: anatomy
 homepage: http://research.amnh.org/atol/files/
@@ -14,9 +17,11 @@ taxon:
   label: spiders
 title: Spider Ontology
 build:
-  source_url: http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/spider/spider_comparative_biology.obo
+  source_url: https://raw.githubusercontent.com/obophenotype/spider-ontology/master/spider_comparative_biology.obo
   method: obo2owl
-tracker: http://sourceforge.net/tracker/?group_id=76834&atid=977401
+  insert_ontology_id: true
+tracker: https://github.com/obophenotype/spider-ontology/issues
+activity_status: active
 ---
 
 An ontology for spider comparative biology including anatomical parts (e.g. leg, claw), behavior (e.g. courtship, combing) and products (i.g. silk, web, borrow).

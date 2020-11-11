@@ -1,30 +1,28 @@
 [![Build Status](https://travis-ci.org/OBOFoundry/OBOFoundry.github.io.svg?branch=master)](https://travis-ci.org/OBOFoundry/OBOFoundry.github.io)
 
-Try it out: http://obofoundry.github.io/
-
-## OBO Foundry website BETA
+## OBO Foundry Registry and Website
 
 ### What is this?
 
-This is a proposed new website for the OBO Foundry. It replaces the
-[previous proposal](https://github.com/OBOFoundry/omb), but uses the
-same principles and YAML/RDF structures
+This is the registry and website for the OBO Foundry.
+
+It uses GitHub pages and can be visible here: http://obofoundry.github.io/
+
+We map http://obofoundry.org to this address.
 
 ### How does it work?
 
 The source can be found on https://github.com/OBOFoundry/OBOFoundry.github.io
 
 It uses GitHub Pages/[Jekyll](https://en.wikipedia.org/wiki/Jekyll_%28software%29),
-a popular static site generator. I already use this for
-http://uberon.org
+a popular static site generator.
 
-It [integrates nicely with
+GitHub pages [are integrated with
 github](https://help.github.com/articles/using-jekyll-with-pages/)
 which means that the entire site can be seen on
-http://obofoundry.github.io (no need to run a dedicated webserver)
+http://obofoundry.github.io (we don't run a dedicated webserver)
 
-At the same time, we are not dependent on github - we could do our own
-static generation, e.g. with a Jenkins job
+For more details see: [README-sitedev.md](README-sitedev.md)
 
 ### I have some comments
 
@@ -34,12 +32,16 @@ but you may want to hold off til things are more stable
 
 ### I want to contribute
 
-Please do! Fork and make PR, but beware things are not yet stable
+Please do! Anyone can fork and make PR, or [create an issue in the tracker](https://github.com/OBOFoundry/OBOFoundry.github.io/issues).
 
-## Organization
+Note that most members of the community will do this via the [obofoundry.org website](http://obofoundry.org) - each ontology page has links for editing the metadata.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Repo Organization
 
  * [registry/](registry)   `<-- DERIVED yaml, json and RDF. DO NOT EDIT`
-    * [registry/ontologies.yaml](registry/ontologies.yaml)  `<-- READONLY`
+    * [registry/ontologies.yml](registry/ontologies.yml)  `<-- READONLY`
     * [registry/ontologies.jsonld](registry/ontologies.jsonld)  `<-- generated from yaml`
     * `registry/ontologies.rdf  <-- TODO generated from jsonld`
  * [ontology/](ontology/)  `<-- source for ontology metadata. EDIT IN HERE`
@@ -47,7 +49,7 @@ Please do! Fork and make PR, but beware things are not yet stable
     * [ontology/uberon.md](ontology/uberon.md)
     * ...
  * [Makefile](Makefile) `<-- For compiling derived artefacts and running tests`
- * [.travis.yml](.travis.ml) `<-- continuous integration config`
+ * [.travis.yml](.travis.yml) `<-- continuous integration config`
  * [_posts/](_posts) `<-- Blog posts/news`
  * [_layouts/](_layouts) `<-- Jekyll layouts`
  * [_includes/](_includes) `<-- Jekyll includes`
@@ -56,7 +58,7 @@ Please do! Fork and make PR, but beware things are not yet stable
 
 ## Instructions for Registry Curators
 
-**NEW!**: See [this FAQ entry](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html) for simple web-based editing of metadata
+See [this FAQ entry](http://obofoundry.github.io/faq/how-do-i-edit-metadata.html) for simple web-based editing of metadata
 
 Please edit the *source* files in the [ontology/](ontology/) directory only.
 

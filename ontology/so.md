@@ -2,19 +2,24 @@
 layout: ontology_detail
 id: so
 contact:
-  email: song-devel@lists.sourceforge.net
-  label: SONG developers
+  email: keilbeck@genetics.utah.edu
+  label: Karen Eilbeck
+license:
+  url: https://creativecommons.org/licenses/by/4.0/
+  label: CC-BY 4.0
 description: A structured controlled vocabulary for sequence annotation, for the exchange of annotation data and for the description of sequence objects in databases.
 domain: biological sequence
 homepage: https://github.com/The-Sequence-Ontology/SO-Ontologies
+mailing_list: https://sourceforge.net/p/song/mailman/song-devel/
 page:
   https://en.wikipedia.org/wiki/Sequence_Ontology
 products:
   - id: so.owl
-title: Sequence types and features
+  - id: so.obo
+title: Sequence types and features ontology
 build:
   notes: SWITCH
-  source_url: https://svn.code.sf.net/p/song/svn/trunk/so-xp.obo
+  source_url: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo
   method: obo2owl
 tracker: https://github.com/The-Sequence-Ontology/SO-Ontologies/issues
 publications:
@@ -23,6 +28,7 @@ publications:
   - id: http://www.ncbi.nlm.nih.gov/pubmed/20226267
     title: Evolution of the Sequence Ontology terms and relationships.
 depicted_by: http://sequenceontology.org/img/so_icon.png
+activity_status: active
 ---
 
 SO is a collaborative ontology project for the definition of sequence features used in biological sequence annotation. SO was initially developed by the Gene Ontology Consortium. Contributors to SO include the GMOD community, model organism database groups such as WormBase, FlyBase, Mouse Genome Informatics group, and institutes such as the Sanger Institute and the EBI. Input to SO is welcomed from the sequence annotation community. SO is also part of the Open Biomedical Ontologies library. Our aim is to develop an ontology suitable for describing the features of biological sequences. For questions, please send mail to the SO developers mailing list. For new term suggestions, please use the [Term Tracker](https://github.com/The-Sequence-Ontology/SO-Ontologies/issues).

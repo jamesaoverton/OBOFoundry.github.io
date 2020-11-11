@@ -1,90 +1,54 @@
 ---
 layout: principle
 id: fp-002-format
-title: format
+title: Common Format (principle 2)
 ---
 
-Principle Name
---------------
+## Summary
 
-common format
+The ontology is made available in a common formal language in an accepted concrete syntax.
 
-Summary
--------
+[This check is automatically validated.](checks/fp_002)
 
-The ontology is made available in a common formal language in an
-accepted concrete syntax.
+## Purpose
 
-Purpose
--------
+A common format allows the maximum number of people to access and reuse an ontology.
 
-A common format allows the maximum number of people to access and reuse
-an ontology.
-
-Implementation
---------------
+## Implementation
 
 ### Recommendations
 
-The ontology should be available in at least one of the following
-formats:
+We make a distinction between how an ontology is developed and how it is presented for release. Developers are free to use whatever combination of technologies and formats is appropriate for development. However, the official OWL PURL for the ontology must resolve to a syntactically valid OWL file using the [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/) syntax.
 
--   OBO Format
--   OWL or OWL2 concrete syntax
-    -   RDF/XML
-    -   OWL2-XML
-    -   OWL2-Manchester Syntax
+Note: some groups publish an .obo version, and the OBO Foundry pipeline takes care of making the valid .owl file. See the FAQ for details. You may also submit the ontology for review as OBO, see 'criteria for review' below.
 
-If you intend to use your ontology for semantic web applications, it
-should be in OWL. OWL is part of the W3C's Semantic Web technology
-stack, which includes RDF [RDF Concepts] and SPARQL [SPARQL].
+Note also that previously we recommended that ontologies may be available in Manchester syntax or OWL-XML, but we have revised this in order to make the official OWL release consumable by a wider variety of tools.
 
 ### Examples
 
--   The Gene Ontology is maintained as OBO-Format. It is automatically
-    converted to OWL and is available in both OBO and OWL via the OBO
-    Foundry.
+- The [Gene Ontology](http://geneontology.org) is maintained as OBO-Format. It is automatically converted to OWL and is available in both OBO and OWL via the OBO Foundry.
 
--   The ChEBI ontology is maintained in a relational database using a
-    custom schema, but makes an OBO-Format file available that is
-    automatically converted to OWL. It is available in both OBO and OWL
-    via the OBO Foundry.
+- The [ChEBI ontology](https://www.ebi.ac.uk/chebi/) is maintained in a relational database using a custom schema, but makes an OBO-Format file available that is automatically converted to OWL. It is available in both OBO and OWL via the OBO Foundry.
 
-OBI is maintained as an OWL ontology.
+- [OBI](http://obi-ontology.org) is maintained as an OWL ontology.
 
-### Counter examples
+### Counter-examples
 
-An ontology that is in Frames format.
+An ontology that is in Frames format, OWL/XML, or OWL Manchester Syntax.
 
-Criteria for Review
--------------------
+## Criteria for review
 
 The ontology is available in at least one of the following formats:
 
--   OBO Format
--   OWL or OWL2 concrete syntax
-    -   RDF/XML
-    -   OWL2-XML
-    -   OWL2-Manchester Syntax
+- OBO Format
+- OWL or OWL2 RDF/XML
 
-History
--------
+## History
 
-Revised wording for principle accepted March 3, 2015
+Revised wording for principle accepted March 3, 2015.
 
-### Original Formulation
+### Original formulation
 
-```
+The ontology is in, or can be expressed in, a common shared syntax. This may be either the OBO syntax, extensions of this syntax, or OWL.
 
-
-The ontology is in, or can be expressed in, a common shared syntax. This
-may be either the OBO syntax, extensions of this syntax, or OWL.
-
-The reason for this is that the same tools can then be usefully applied.
-This facilitates shared software implementations. This criterion is not
-met in all of the ontologies currently listed, but we are working with
-the ontology developers to have them available in a common OBO syntax.
-
-```
-
-<Category:Principles> <Category:Accepted>
+The reason for this is that the same tools can then be usefully applied. This facilitates shared software implementations. This criterion is not met in all of the ontologies currently listed, but we are working with the ontology developers to have them available in a common OBO syntax.

@@ -9,6 +9,7 @@ domain: anatomy
 homepage: https://github.com/obophenotype/porifera-ontology
 products:
   - id: poro.owl
+  - id: poro.obo
 taxon:
   id: NCBITaxon:6040
   label: Porifera
@@ -16,17 +17,23 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 title: Porifera Ontology
+publications:
+  - id: https://doi.org/10.1186/2041-1480-5-39
+    title: "The Porifera Ontology (PORO): enhancing sponge systematics with an anatomy ontology"
 dependencies:
  - id: uberon
  - id: ro
+jobs:
+  - id: https://travis-ci.org/obophenotype/porifera-ontology
+    type: travis-ci
 build:
   checkout: git clone https://github.com/obophenotype/porifera-ontology.git
   system: git
   path: .
   infallible: 1
   method: vcs
-integration_server: http://build.berkeleybop.org/job/build-poro/
 tracker: https://github.com/obophenotype/porifera-ontology/issues
+activity_status: active
 ---
 
 An ontology covering the anatomy of Porifera (sponges)

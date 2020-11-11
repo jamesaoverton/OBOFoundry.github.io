@@ -1,19 +1,16 @@
 ---
 layout: principle
 id: fp-009-users
-title: users
+title: Documented Plurality of Users (principle 9)
 ---
-
-Principle Name
---------------
-
-Documented plurality of users
 
 Summary
 -------
 
 The ontology developers should document that the ontology is used by
 multiple independent people or organizations.
+
+[This check is automatically validated.](checks/fp_009)
 
 Purpose
 -------
@@ -39,7 +36,7 @@ can meet.
 Examples
 --------
 
--   Use of the target ontology’s term IRIs in other ontologies. This can
+-   Use of the target ontology's term IRIs in other ontologies. This can
     be evidenced by linking to the other ontology that uses an ontology
     term IRI from this ontology
 
